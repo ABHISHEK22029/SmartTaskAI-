@@ -1,39 +1,46 @@
-# nextjs-golang-crud-app
-🚨Simple full-stack project with nextjs and golang
+# SmartTaskAI
+🚀 **AI-Powered Task Management System** with **Next.js & Golang**
 
-The purpose of creating this project is to learn for junior programmers how to implement a full stack application and create the best structure for the application.
+SmartTaskAI is a **full-stack AI-powered task management application** that enables users to create, assign, and track tasks in **real-time**. Built with **Golang (Fiber)** for the backend and **Next.js (React + TypeScript)** for the frontend, it features **JWT authentication, WebSockets for real-time updates, and AI-driven task breakdowns using OpenAI/Gemini**.
+
+📌 **Designed for developers and teams looking to optimize workflows with AI-powered task suggestions and seamless real-time collaboration.**
+
 ![HomePage](https://github.com/pooulad/nextjs-golang-crud-app/blob/main/images/home.png)
 
-## Technology list in this project
+## **🛠️ Technology Stack**
 
-in back-end:
- - Fiber
- - JWT token
- - Validator
- - Godotenv
- - Paginate
- - Postgres
- - GORM
+### **🔹 Backend (Golang)**
+- **Fiber** - Fast web framework for Golang
+- **JWT Authentication** - Secure user sessions
+- **WebSockets** - Real-time task updates
+- **PostgreSQL / MongoDB** - Database management
+- **GORM** - ORM for PostgreSQL integration
+- **OpenAI API / Gemini API** - AI-powered task breakdowns
+- **Docker & Kubernetes** - For containerized deployment
 
+### **🔹 Frontend (Next.js + TypeScript)**
+- **React Hook Form** - Form handling
+- **Axios** - API communication
+- **React Toastify** - Notifications
+- **TailwindCSS** - UI styling
+- **NextAuth.js** - Secure authentication
+- **WebSockets** - Real-time UI updates
 
-in front-end:
- - React hook form
- - Axios
- - React-toastify
- - Tailwindcss
- - Typescript
- - Next-auth
+## **📌 Features**
+✅ **JWT Authentication** - Secure login & session handling  
+✅ **AI-Powered Task Suggestions** - Smart breakdown of tasks using OpenAI/Gemini  
+✅ **Real-Time Updates** - WebSockets for live task tracking  
+✅ **Task Management Dashboard** - Create, assign, and track tasks dynamically  
+✅ **Role-Based Access Control (RBAC)** - Admin/User roles  
+✅ **Cloud Deployment** - Backend on **Render/Fly.io**, Frontend on **Vercel**  
+✅ **Dockerized Setup** - Run services in containers  
+✅ **Slack/Discord Bot Integration** *(optional)* - For notifications  
 
+## **📌 How to Run the Project**
 
-## How to run
-
-🚦I included the .env file intentionally in the project so that you can see how the services work and with what settings. Otherwise, it should not be displayed in the project.
-
-With Docker🐳:
-
-1-Run DB and API service
+### **Option 1: Run with Docker 🐳**
 ```bash
-  docker compose up -d
+docker compose up -d
 ```
 2- Run nextjs
 ```bash
@@ -42,7 +49,7 @@ With Docker🐳:
   yarn run dev
 ```
 
-Manaul✌️:
+### **Option 2: Manual**
 
 1-Create DB based on .env file(you can change it in .env file)
 
